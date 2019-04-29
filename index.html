@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Exercise 3</title>
+  <meta charset="UTF-8" />
+  <link href="style.css" rel="stylesheet" />
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous"
+  />
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+  crossorigin="anonymous"
+  />
+  <style>
+  #input-search {
+    width: 300px;
+    height: 20;
+    text-indent: 5px;
+    border: 2px solid #DEE2E6;
+    border-left: none;
+    color: #DEE2E6;
+    border-radius: 0 5px 5px 0;
+  }
+  .search-bar {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: left;
+    display: flex;
+  }
+  .search-icon {
+    width: 20;
+    height: 20;
+    border: 2px solid #DEE2E6;
+    background: #ffffff;
+    border-radius: 5px 0 0 5px;
+    color: #DEE2E6;
+    font-size: 15px;
+    text-align: center;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+
+  
+</style>
+</head>
+
+<body onload="Function()">
+  <div class="wrapper">
+    <div class="container">
+      <div class="search-bar">
+        <button type="submit" class="search-icon">
+          <i class="fa fa-search"></i>
+        </button>
+        <input type="text" value="" placeholder="Search Name of Planet" id="input-search" onkeyup="search()"/>
+      </div>
+      <br />
+      <table class="table table-bordered">
+        <thead id="result-data"></thead>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
